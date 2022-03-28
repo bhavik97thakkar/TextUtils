@@ -64,12 +64,12 @@ export default function TextForm(props) {
 
             <div className="container my-3" style={{ color: props.mode === 'dark' ? 'white' : '#6c757d' }}>
                 <h1>Your text summary</h1>
-                <p><b>{text.split(" ").filter((element)=> {return element.length!==0}).length}</b> words and <b>{text.length} </b>letters and you can read this in <b>{0.008 * text.split(" ").filter((element)=> {return element.length!==0}).length}</b> minutes on an average</p>
+                <p><b>{text.split(/\s+/).filter((element)=> {return element.length!==0}).length}</b> words and <b>{text.length} </b>letters and you can read this in <b>{0.008 * text.split(" ").filter((element)=> {return element.length!==0}).length}</b> minutes on an average</p>
                 <h4>Preview of Text</h4>
                 <p>{text.length > 0 ? text : 'Nothing to Preview'}</p>
 
             </div>
-        </> 
+        </>
 
     )
 }

@@ -29,7 +29,7 @@ export default function About(props) {
 
     const myStyle={
         color:props.mode==='dark'?'white':'#212510',
-        backgroundColor:props.mode==='dark'?'#909090':'white',
+        backgroundColor:props.mode==='dark'?'#212529':'white',
         border:'.9px solid',
         boderColor:props.mode==='dark'?'white':'#212529'
     }
