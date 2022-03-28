@@ -69,7 +69,7 @@ export default function TextForm(props) {
                 <p>{text.length > 0 ? text : 'Nothing to Preview'}</p>
 
             </div>
-        </>
+        </> 
 
     )
 }
